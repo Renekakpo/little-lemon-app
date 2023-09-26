@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { View, Text, TextInput, StyleSheet } from "react-native";
+import { Colors } from "../assets/Colors";
 
 const CustomTextField = ({
   label,
@@ -55,24 +56,23 @@ const styles = StyleSheet.create({
   },
   input: {
     height: 45,
-    borderColor: "gray",
+    borderColor: Colors.gray,
     borderWidth: 2,
     borderRadius: 8,
     padding: 10,
   },
   inputError: {
-    borderColor: "#FF0000",
+    borderColor: Colors.secondary,
     borderWidth: 2,
   },
   errorMessage: {
-    color: "#FF0000",
+    color: Colors.secondary,
     fontSize: 15,
     marginTop: 5,
   },
   inputNumeric: {
-    // Modify the style for numeric input
     borderWidth: 2,
-    borderColor: "#004030",
+    borderColor: Colors.primary,
   },
 });
 

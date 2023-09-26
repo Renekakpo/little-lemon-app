@@ -6,6 +6,7 @@ import {
   ScrollView,
   StyleSheet,
 } from "react-native";
+import { Colors } from "../assets/Colors";
 
 const CategoryList = ({ categories, onCategoryToggle }) => {
   const [selectedCategories, setSelectedCategories] = useState([]);
@@ -61,21 +62,21 @@ const styles = StyleSheet.create({
     paddingVertical: 8,
   },
   categoryButton: {
-    backgroundColor: "#f0f0f0",
+    backgroundColor: Colors.light,
     borderRadius: 20,
     paddingVertical: 8,
     paddingHorizontal: 16,
     marginRight: 8,
   },
   selectedCategory: {
-    backgroundColor: "#004030",
+    backgroundColor: Colors.primary,
   },
   categoryText: {
-    color: "#333",
+    color: Colors.dark,
     fontWeight: "bold",
   },
   selectedText: {
-    color: "#FFFFFF",
+    color: Colors.white,
   },
 });
 

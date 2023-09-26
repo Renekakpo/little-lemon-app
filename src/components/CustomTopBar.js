@@ -1,5 +1,6 @@
 import react from "react";
 import { View, Text, Image, StyleSheet } from "react-native";
+import { Colors } from "../assets/Colors";
 
 export default function CustomTopBar() {
   return (
@@ -16,7 +17,7 @@ export default function CustomTopBar() {
 const styles = StyleSheet.create({
   headerTitleContainer: {
     flexDirection: "row",
-    backgroundColor: "#fff",
+    backgroundColor: Colors.white,
   },
   headerLogo: {
     width: 24,

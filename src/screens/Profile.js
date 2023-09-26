@@ -13,6 +13,7 @@ import CustomTextField from "../components/CustomTextField";
 import CustomCheckbox from "../components/CustomCheckbox";
 import * as ImagePicker from "expo-image-picker";
 import CustomButton from "../components/CustomButton";
+import { Colors } from "../assets/Colors";
 
 export default function ProfileScreen({ navigation }) {
   const [isOrderStatusesChecked, setIsOrderStatusesChecked] = useState(false);
@@ -222,9 +223,6 @@ export default function ProfileScreen({ navigation }) {
       {/* Header */}
       <Text style={styles.title}>Personal information</Text>
 
-      {/* SubHeader */}
-      <Text style={styles.subHeader}>Avatar</Text>
-
       {/* User profil picture section */}
       <View style={styles.topRowContainer}>
         {renderProfileImage()}
@@ -351,18 +349,13 @@ export default function ProfileScreen({ navigation }) {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "white",
+    backgroundColor: Colors.white,
     padding: 15,
   },
   title: {
     fontSize: 24,
     fontWeight: "bold",
-    color: "black",
-  },
-  subHeader: {
-    color: "gray",
-    fontSize: 14,
-    marginTop: 15,
+    color: Colors.dark,
   },
   topRowContainer: {
     flexDirection: "row",
@@ -371,14 +364,14 @@ const styles = StyleSheet.create({
   },
   changePhotoButton: {
     height: 50,
-    backgroundColor: "#004030",
+    backgroundColor: Colors.primary,
     alignItems: "center",
     justifyContent: "center",
     borderRadius: 8,
     marginStart: 25,
   },
   changePhotoButtonText: {
-    color: "white",
+    color: Colors.white,
     fontSize: 18,
     fontWeight: "bold",
     paddingStart: 20,
@@ -386,7 +379,7 @@ const styles = StyleSheet.create({
   },
   removePhotoButton: {
     height: 50,
-    backgroundColor: "white",
+    backgroundColor: Colors.white,
     alignItems: "center",
     justifyContent: "center",
     borderRadius: 4,
@@ -403,7 +396,7 @@ const styles = StyleSheet.create({
   },
   discardChangesBtn: {
     height: 45,
-    backgroundColor: "white",
+    backgroundColor: Colors.white,
     alignItems: "center",
     justifyContent: "center",
     borderRadius: 8,
@@ -411,7 +404,7 @@ const styles = StyleSheet.create({
     marginEnd: 10,
   },
   discardChangesBtnText: {
-    color: "black",
+    color: Colors.dark,
     fontSize: 18,
     fontWeight: "bold",
     paddingStart: 20,
@@ -419,14 +412,14 @@ const styles = StyleSheet.create({
   },
   saveChangesButton: {
     height: 45,
-    backgroundColor: "#004030",
+    backgroundColor: Colors.primary,
     alignItems: "center",
     justifyContent: "center",
     borderRadius: 8,
     marginStart: 10,
   },
   saveChangesButtonText: {
-    color: "white",
+    color: Colors.white,
     fontSize: 18,
     fontWeight: "bold",
     paddingStart: 20,
@@ -438,22 +431,22 @@ const styles = StyleSheet.create({
   checkHeader: {
     fontSize: 16,
     fontWeight: "bold",
-    color: "#000",
+    color: Colors.dark,
   },
   logoutButton: {
     flex: 1,
     alignItems: "center",
     justifyContent: "center",
     height: 40,
-    backgroundColor: "#FFC400",
+    backgroundColor: Colors.primaryAlt,
     borderRadius: 6,
     borderWidth: 2,
-    borderColor: "#FFAB00",
+    borderColor: Colors.secondaryAlt,
     marginTop: 35,
   },
   logoutButtonText: {
     fontSize: 16,
     fontWeight: "bold",
-    color: "#000",
+    color: Colors.dark,
   },
 });

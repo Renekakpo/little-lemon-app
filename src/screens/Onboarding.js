@@ -8,9 +8,10 @@ import {
   StyleSheet,
 } from "react-native";
 import AsyncStorage from "@react-native-async-storage/async-storage";
-import CustomButton from "../components/CustomButton";
 import { useNavigation } from "@react-navigation/native";
 import CustomTextField from "../components/CustomTextField";
+import CustomButton from "../components/CustomButton";
+import { Colors } from "../assets/Colors";
 
 export default function OnboardingScreen() {
   const [firstName, setFirstName] = useState("");
@@ -127,7 +128,7 @@ export default function OnboardingScreen() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "#E5E5E5",
+    backgroundColor: "#FFFFFF",
   },
   header: {
     flex: 0.1,
@@ -138,7 +139,7 @@ const styles = StyleSheet.create({
   },
   body: {
     flex: 1,
-    backgroundColor: "lightgray",
+    backgroundColor: Colors.primary,
     alignItems: "center",
     justifyContent: "space-between",
     paddingTop: 45,
@@ -164,6 +165,7 @@ const styles = StyleSheet.create({
     fontSize: 24,
     fontWeight: "bold",
     margin: 25,
+    color: "#fff",
   },
   inputsContainer: {
     alignItems: "center",
@@ -173,29 +175,29 @@ const styles = StyleSheet.create({
   input: {
     width: 200,
     height: 45,
-    borderColor: "gray",
+    borderColor: Colors.gray,
     borderWidth: 2,
     borderRadius: 8,
   },
   error: {
-    color: "red",
+    color: Colors.secondary,
     marginBottom: 10,
   },
   button: {
-    backgroundColor: "lightblue",
+    backgroundColor: Colors.primaryAlt,
     padding: 10,
     alignItems: "center",
     borderRadius: 8,
   },
   buttonText: {
-    color: "black",
+    color: Colors.dark,
     fontSize: 18,
     fontWeight: "bold",
     paddingStart: 30,
     paddingEnd: 30,
   },
   disabledButton: {
-    backgroundColor: "lightgray", // Change the button color when it's disabled
+    backgroundColor: Colors.light,
     borderRadius: 8,
   },
   labelStyle: {

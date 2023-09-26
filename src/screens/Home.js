@@ -8,6 +8,7 @@ import {
   searchDishes,
 } from "../helpers/DatabaseHelper";
 import HeroBanner from "../components/HeroBanner";
+import { Colors } from "../assets/Colors";
 
 const categories = [
   "Starters",
@@ -150,13 +151,13 @@ export default function HomeScreen() {
 const styles = StyleSheet.create({
   mainContainer: {
     flex: 1,
-    backgroundColor: "#fff",
+    backgroundColor: Colors.white,
     padding: 16,
   },
   menuItem: {
     margin: 8,
     padding: 16,
-    backgroundColor: "#E5E5E5",
+    backgroundColor: Colors.light,
     borderRadius: 8,
     flexDirection: "row",
     alignItems: "center",
@@ -188,6 +189,6 @@ const styles = StyleSheet.create({
     fontSize: 15,
     fontWeight: "bold",
     textTransform: "uppercase",
-    color: "#000",
+    color: Colors.dark,
   },
 });

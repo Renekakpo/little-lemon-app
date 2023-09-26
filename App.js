@@ -1,15 +1,15 @@
 import react, { useState, useEffect } from "react";
 import { StyleSheet, Text, View } from "react-native";
-import OnboardingScreen from "./screens/Onboarding";
-import ProfileScreen from "./screens/Profile"; // Import the Profile screen
-import HomeScreen from "./screens/Home";
-import SplashScreen from "./screens/SplashScreen";
-import CircularBackButton from "./components/CircularBackButotn";
+import OnboardingScreen from "./src/screens/Onboarding";
+import ProfileScreen from "./src/screens/Profile"; // Import the Profile screen
+import HomeScreen from "./src/screens/Home";
+import SplashScreen from "./src/screens/SplashScreen";
+import CircularBackButton from "./src/components/CircularBackButotn";
 import AsyncStorage from "@react-native-async-storage/async-storage"; // Import AsyncStorage
 import { NavigationContainer } from "@react-navigation/native";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
-import CircularImage from "./components/CircularImage";
-import CustomTopBar from "./components/CustomTopBar";
+import CircularImage from "./src/components/CircularImage";
+import CustomTopBar from "./src/components/CustomTopBar";
 
 const Stack = createNativeStackNavigator();
 

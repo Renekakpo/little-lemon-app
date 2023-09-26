@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { View, Text, StyleSheet, Image, TextInput } from "react-native";
+import { Colors } from "../assets/Colors";
 
 export default function HeroBanner({ onSearchTextChanged }) {
   const [searchText, setSearchText] = useState("");
@@ -44,17 +45,17 @@ export default function HeroBanner({ onSearchTextChanged }) {
 const styles = StyleSheet.create({
   container: {
     padding: 16,
-    backgroundColor: "#004030",
+    backgroundColor: Colors.primary,
     marginBottom: 25,
   },
   title: {
     fontSize: 24,
     fontWeight: "bold",
-    color: "#FFC400",
+    color: Colors.primaryAlt,
   },
   subtitle: {
     fontSize: 16,
-    color: "#FFFFFF",
+    color: Colors.white,
     marginTop: 10,
   },
   descriptionContainer: {
@@ -65,7 +66,7 @@ const styles = StyleSheet.create({
   description: {
     flex: 1,
     fontSize: 14,
-    color: "#FFFFFF",
+    color: Colors.white,
   },
   restaurantImage: {
     width: 100,
@@ -77,10 +78,10 @@ const styles = StyleSheet.create({
   searchContainer: {
     height: 40,
     flexDirection: "row",
-    backgroundColor: "#FFFFFF",
+    backgroundColor: Colors.white,
     alignItems: "center",
     marginTop: 16,
-    borderColor: "#CCCCCC",
+    borderColor: Colors.gray,
     borderWidth: 1,
     borderRadius: 8,
     paddingHorizontal: 8,
